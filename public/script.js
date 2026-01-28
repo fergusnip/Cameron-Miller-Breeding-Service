@@ -19,8 +19,7 @@ siteNav?.querySelectorAll("a").forEach((a) => {
   });
 });
 
-form?.addEventListener("submit", async (e) => {
-  e.preventDefault();
+
   formNote.textContent = "";
   submitBtn.disabled = true;
   submitBtn.textContent = "Sending...";
@@ -54,3 +53,4 @@ form?.addEventListener("submit", async (e) => {
     submitBtn.textContent = "Send Enquiry";
   }
 });
+
