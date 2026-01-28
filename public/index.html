@@ -273,7 +273,39 @@
             </div>
           </div>
 
-          <form class="card form" id="contactForm">
+          <form
+  class="card form"
+  action="mailto:darcybe22@gmail.com"
+  method="POST"
+  enctype="text/plain"
+>
+  <label>
+    Name
+    <input name="Name" required />
+  </label>
+
+  <label>
+    Email
+    <input name="Email" type="email" required />
+  </label>
+
+  <label>
+    Mobile
+    <input name="Mobile" />
+  </label>
+
+  <label>
+    Enquiry
+    <textarea name="Message" rows="6" required></textarea>
+  </label>
+
+  <button class="btn" type="submit">Send Enquiry</button>
+
+  <p class="form-note">
+    This will open your email app to send the message.
+  </p>
+</form>
+
             <label>
               Name
               <input name="name" autocomplete="name" required />
